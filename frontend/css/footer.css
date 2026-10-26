@@ -1,0 +1,6 @@
+/* ============ FOOTER ============ */
+footer { border-top: 1px solid var(--border); padding: 44px 0; }
+.footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+.footer-contact { color: var(--muted); font-size: 0.92rem; }
+.footer-contact a { color: var(--amber); font-weight: 600; }
+.footer-copy { color: var(--muted); font-size: 0.85rem; }

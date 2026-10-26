@@ -1,0 +1,22 @@
+/* ============ RESPONSIVO ============ */
+@media (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+    .team-grid { grid-template-columns: repeat(3, 1fr); }
+    .portfolio-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 860px) {
+    .nav-links, .nav-actions .btn { display: none; }
+    .hamburger { display: block; }
+    .hero { padding: 70px 0 90px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+    .hero-art { max-width: 480px; margin: 0 auto; }
+    .contact-wrapper { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+    .services-grid, .why-grid { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .avatar { width: 110px; height: 110px; font-size: 1.8rem; }
+    .hero-ctas .btn { width: 100%; }
+    .form-grid { grid-template-columns: 1fr; }
+}

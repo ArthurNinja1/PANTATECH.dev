@@ -1,0 +1,49 @@
+/* ============ TOKENS ============ */
+:root {
+    --bg: #0A1420;
+    --bg-elevated: #0F1D2E;
+    --bg-avatar: #122236;
+    --border: #1E2C3D;
+    --text: #EEF1F5;
+    --muted: #8B98AC;
+    --amber: #F2B441;
+    --amber-dark: #C98A2E;
+    --amber-glow: rgba(242, 180, 65, 0.12);
+    --blue: #6C8CFF;
+    --radius: 18px;
+    --max: 1200px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+img, svg { display: block; }
+a { text-decoration: none; color: inherit; }
+section { scroll-margin-top: 90px; }
+.container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+/* ============ REVEAL ON SCROLL ============ */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ============ BOTÕES ============ */
+.btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 0.85rem 1.5rem; border-radius: 12px;
+    font-weight: 700; font-size: 0.93rem; font-family: inherit;
+    border: 1.5px solid transparent; cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+}
+.btn-primary { background: var(--amber); color: var(--bg); }
+.btn-primary:hover { background: var(--amber-dark); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(242, 180, 65, 0.3); }
+.btn-ghost { border-color: var(--border); color: var(--muted); background: transparent; }
+.btn-ghost:hover { border-color: var(--amber); color: var(--amber); background: var(--amber-glow); }
+.btn-amber-outline { border-color: var(--amber); color: var(--amber); background: transparent; }
+.btn-amber-outline:hover { background: var(--amber-glow); transform: translateY(-2px); }
